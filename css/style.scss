@@ -233,8 +233,8 @@ body {
    .sun__light-5 {
       content: "";
       position: absolute;
-      width: 10px;
-      height: 3px;
+      width: 16px;
+      height: 5px;
       border-radius: 50%;
       background: rgb(252, 252, 196);
    }
@@ -327,8 +327,7 @@ body {
    font-family: fantasy;
    letter-spacing: 2px;
    &:active {
-      transform: scale(0.9);
-      transition: 0.2s;
+      transform: scale(0.99);
    }
 }
 .reload {

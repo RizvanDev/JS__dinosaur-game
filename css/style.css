@@ -784,8 +784,8 @@ body {
 .game__sun .sun__light-5 {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 3px;
+  width: 16px;
+  height: 5px;
   border-radius: 50%;
   background: #fcfcc4;
 }
@@ -904,10 +904,8 @@ body {
 }
 
 .jump-btn:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .reload {
