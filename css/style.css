@@ -504,6 +504,8 @@ template {
 
 body {
   background: #2b2525;
+  width: 920px;
+  margin: 0 auto;
 }
 
 .game {
@@ -511,7 +513,6 @@ body {
   width: 900px;
   height: 300px;
   margin: 80px auto;
-  padding: 0 10px;
   background: #c6dfe8;
   border-radius: 6px;
   overflow: hidden;
