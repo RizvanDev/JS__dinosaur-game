@@ -11,13 +11,8 @@ const modal = document.querySelector('.modal');
 const modalgg = document.querySelector('.modal-gg');
 const modalwp = document.querySelector('.modal-wp');
 
+const btn = document.querySelector('.jump-btn');
 
-document.addEventListener('keydown', function (event) {
-   jump();
-});
-document.addEventListener('click', function (event) {
-   jump();
-});
 
 function jump() {
    if (dino.classList != 'jump') {
@@ -27,6 +22,10 @@ function jump() {
       dino.classList.remove('jump');
    }, 400)
 };
+
+btn.addEventListener('click', function (event) {
+   jump();
+});
 
 let isAlife = setInterval(function () {
    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));

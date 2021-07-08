@@ -305,3 +305,23 @@ body {
    top: 22px;
    left: 120px;
 }
+
+.jump-btn {
+   z-index: 10;
+   padding: 10px;
+   max-width: 60px;
+   margin: -50px auto 0 auto;
+   display: block;
+   text-align: center;
+   background: bisque;
+   color: brown;
+   font-weight: 800;
+   cursor: pointer;
+   border-radius: 7px;
+   font-family: fantasy;
+   letter-spacing: 1px;
+   &:active {
+      transform: scale(0.95);
+      transition: 0.1s;
+   }
+}

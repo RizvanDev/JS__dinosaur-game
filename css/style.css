@@ -253,7 +253,7 @@ template {
     top: 238px;
   }
   50% {
-    top: 175px;
+    top: 125px;
   }
   100% {
     top: 238px;
@@ -265,7 +265,7 @@ template {
     top: 238px;
   }
   50% {
-    top: 175px;
+    top: 125px;
   }
   100% {
     top: 238px;
@@ -878,4 +878,27 @@ body {
   position: absolute;
   top: 22px;
   left: 120px;
+}
+
+.jump-btn {
+  z-index: 10;
+  padding: 10px;
+  max-width: 60px;
+  margin: -50px auto 0 auto;
+  display: block;
+  text-align: center;
+  background: bisque;
+  color: brown;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: fantasy;
+  letter-spacing: 1px;
+}
+
+.jump-btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
