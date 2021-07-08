@@ -11,10 +11,11 @@ const modal = document.querySelector('.modal');
 const modalgg = document.querySelector('.modal-gg');
 const modalwp = document.querySelector('.modal-wp');
 
-document.addEventListener('click', function (event) {
+
+document.addEventListener('keydown', function (event) {
    jump();
 });
-document.addEventListener('keydown', function (event) {
+document.addEventListener('click', function (event) {
    jump();
 });
 
@@ -24,7 +25,7 @@ function jump() {
    }
    setTimeout(function () {
       dino.classList.remove('jump');
-   }, 500)
+   }, 400)
 };
 
 let isAlife = setInterval(function () {

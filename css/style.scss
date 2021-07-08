@@ -14,6 +14,9 @@ body {
    background: rgb(198, 223, 232);
    border-radius: 6px;
    overflow: hidden;
+   &:hover {
+      cursor: pointer;
+   }
 }
 #dino {
    width: 50px;
@@ -30,7 +33,7 @@ body {
    animation: dino-go-home 3.5s linear;
 }
 .jump {
-   animation: jumpDino 0.5s ease-in-out;
+   animation: jumpDino 0.3s ease-out 0s;
 }
 #cactus-1 {
    width: 20px;
