@@ -312,19 +312,19 @@ body {
 
 .jump-btn {
    z-index: 10;
-   padding: 30px;
-   max-width: 240px;
+   padding: 60px;
+   max-width: 340px;
    margin: -50px auto 0 auto;
    display: block;
    text-align: center;
    background: bisque;
    color: brown;
-   font-size: 26px;
+   font-size: 38px;
    font-weight: 800;
    cursor: pointer;
    border-radius: 7px;
    font-family: fantasy;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
    &:active {
       transform: scale(0.9);
       transition: 0.2s;
@@ -332,10 +332,12 @@ body {
 }
 .reload {
    display: block;
+   position: relative;
+   left: 900px;
+   top: -100px;
    object-fit: cover;
-   width: 50px;
-   height: 50px;
-   margin: 10px auto;
+   width: 60px;
+   height: 60px;
    border-radius: 50%;
    border-color: transparent;
    background: none;
