@@ -8,8 +8,9 @@ body {
 .game {
    position: relative;
    width: 900px;
-   height: 200px;
+   height: 300px;
    margin: 80px auto;
+   padding: 0 10px;
    background: rgb(198, 223, 232);
    border-radius: 6px;
    overflow: hidden;
@@ -21,9 +22,15 @@ body {
    background-size: contain;
    background-position: center;
    position: absolute;
-   top: 148px;
+   top: 238px;
    left: 20px;
    z-index: 5;
+}
+.dino-go-home {
+   animation: dino-go-home 3.5s linear;
+}
+.jump {
+   animation: jumpDino 0.5s ease-in-out;
 }
 #cactus-1 {
    width: 20px;
@@ -32,7 +39,7 @@ body {
    background-size: 20px 30px;
    position: absolute;
    left: 1950px;
-   top: 140px;
+   top: 230px;
    z-index: 3;
    animation: cactusAnimate1 11s infinite linear;
 }
@@ -43,14 +50,14 @@ body {
    background-size: 35px 45px;
    position: absolute;
    left: 875px;
-   top: 155px;
+   top: 245px;
    z-index: 4;
    animation: cactusAnimate2 2.3s infinite linear;
 }
 #home {
    z-index: 3;
    position: absolute;
-   top: 110px;
+   top: 200px;
    left: 3000px;
    width: 100px;
    height: 80px;
@@ -61,7 +68,7 @@ body {
 }
 #home-away {
    position: absolute;
-   top: 150px;
+   top: 240px;
    left: 4300px;
    width: 35px;
    height: 25px;
@@ -73,16 +80,13 @@ body {
 #cave {
    z-index: 4;
    position: absolute;
-   left: 6000px;
+   left: 800px;
    bottom: -6px;
    width: 150px;
    height: 100px;
    background: url("../images/cave.png") no-repeat;
    background-size: 150px 100px;
-   animation: cave 3s linear;
-}
-.jump {
-   animation: jumpDino 0.5s ease-in-out;
+   animation: cave 30s linear;
 }
 
 #road,
@@ -91,7 +95,7 @@ body {
    position: absolute;
    bottom: 0;
    width: 100%;
-   height: 30px;
+   height: 40px;
    display: flex;
    background: rgba(114, 36, 36, 0.556);
    animation: traffic 2.3s infinite linear;
@@ -100,7 +104,7 @@ body {
    animation: traffic-2 2.3s infinite linear;
 }
 .road__details {
-   width: 5px;
+   width: 6px;
    height: 2px;
    background: #0008;
    border-radius: 50%;
@@ -165,6 +169,46 @@ body {
       color: rgb(63, 59, 59);
    }
 }
+.modal-gg {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 0;
+   .modal-gg__text,
+   .modal-gg__subtext {
+      font-family: fantasy;
+      font-size: 40px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 3px #66fd01;
+      color: rgb(63, 59, 59);
+      line-height: 38px;
+   }
+   .modal-gg__subtext {
+      font-size: 20px;
+      text-align: center;
+   }
+}
+.modal-wp {
+   position: absolute;
+   top: -100%;
+   left: 50%;
+   padding: 10px 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: blanchedalmond;
+   border-radius: 5px;
+   transform: translateX(-50%);
+   transition: all 3.6s ease-in;
+   .modal-wp__text {
+      font-family: fantasy;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: rgb(63, 59, 59);
+      line-height: 38px;
+   }
+}
 
 .game__sun {
    width: 80px;
@@ -223,19 +267,19 @@ body {
    width: 100%;
    height: 100%;
    position: absolute;
-   top: 0;
+   top: 20px;
    left: 0;
    display: flex;
-   animation: cloudy 15s infinite linear;
+   animation: cloudy 16s infinite linear;
 }
 .game__clouds-2 {
-   animation: cloudy-2 15s infinite linear;
+   animation: cloudy-2 16s infinite linear;
 }
 .cloud {
    width: 110px;
-   height: 55px;
+   height: 70px;
    background: url("../images/cloud.png") no-repeat;
-   background-size: 110px 55px;
+   background-size: 110px 70px;
    opacity: 0.8;
 }
 .cloud-1 {

@@ -36,22 +36,30 @@
 // dino animation
 @keyframes jumpDino {
    0% {
-      top: 148px;
+      top: 238px;
    }
    50% {
-      top: 85px;
+      top: 175px;
    }
    100% {
-      top: 148px;
+      top: 238px;
+   }
+}
+@keyframes dino-go-home {
+   0% {
+      left: 20px;
+   }
+   100% {
+      left: 780px;
    }
 }
 // cave animation
 @keyframes cave {
    0% {
-      left: 6000px;
+      left: 6200px;
    }
    100% {
-      left: -100px;
+      left: 800px;
    }
 }
 // sun light animation

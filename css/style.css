@@ -250,43 +250,61 @@ template {
 
 @-webkit-keyframes jumpDino {
   0% {
-    top: 148px;
+    top: 238px;
   }
   50% {
-    top: 85px;
+    top: 175px;
   }
   100% {
-    top: 148px;
+    top: 238px;
   }
 }
 
 @keyframes jumpDino {
   0% {
-    top: 148px;
+    top: 238px;
   }
   50% {
-    top: 85px;
+    top: 175px;
   }
   100% {
-    top: 148px;
+    top: 238px;
+  }
+}
+
+@-webkit-keyframes dino-go-home {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 780px;
+  }
+}
+
+@keyframes dino-go-home {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 780px;
   }
 }
 
 @-webkit-keyframes cave {
   0% {
-    left: 6000px;
+    left: 6200px;
   }
   100% {
-    left: -100px;
+    left: 800px;
   }
 }
 
 @keyframes cave {
   0% {
-    left: 6000px;
+    left: 6200px;
   }
   100% {
-    left: -100px;
+    left: 800px;
   }
 }
 
@@ -491,8 +509,9 @@ body {
 .game {
   position: relative;
   width: 900px;
-  height: 200px;
+  height: 300px;
   margin: 80px auto;
+  padding: 0 10px;
   background: #c6dfe8;
   border-radius: 6px;
   overflow: hidden;
@@ -505,9 +524,19 @@ body {
   background-size: contain;
   background-position: center;
   position: absolute;
-  top: 148px;
+  top: 238px;
   left: 20px;
   z-index: 5;
+}
+
+.dino-go-home {
+  -webkit-animation: dino-go-home 3.5s linear;
+          animation: dino-go-home 3.5s linear;
+}
+
+.jump {
+  -webkit-animation: jumpDino 0.5s ease-in-out;
+          animation: jumpDino 0.5s ease-in-out;
 }
 
 #cactus-1 {
@@ -517,7 +546,7 @@ body {
   background-size: 20px 30px;
   position: absolute;
   left: 1950px;
-  top: 140px;
+  top: 230px;
   z-index: 3;
   -webkit-animation: cactusAnimate1 11s infinite linear;
           animation: cactusAnimate1 11s infinite linear;
@@ -530,7 +559,7 @@ body {
   background-size: 35px 45px;
   position: absolute;
   left: 875px;
-  top: 155px;
+  top: 245px;
   z-index: 4;
   -webkit-animation: cactusAnimate2 2.3s infinite linear;
           animation: cactusAnimate2 2.3s infinite linear;
@@ -539,7 +568,7 @@ body {
 #home {
   z-index: 3;
   position: absolute;
-  top: 110px;
+  top: 200px;
   left: 3000px;
   width: 100px;
   height: 80px;
@@ -552,7 +581,7 @@ body {
 
 #home-away {
   position: absolute;
-  top: 150px;
+  top: 240px;
   left: 4300px;
   width: 35px;
   height: 25px;
@@ -566,19 +595,14 @@ body {
 #cave {
   z-index: 4;
   position: absolute;
-  left: 6000px;
+  left: 800px;
   bottom: -6px;
   width: 150px;
   height: 100px;
   background: url("../images/cave.png") no-repeat;
   background-size: 150px 100px;
-  -webkit-animation: cave 3s linear;
-          animation: cave 3s linear;
-}
-
-.jump {
-  -webkit-animation: jumpDino 0.5s ease-in-out;
-          animation: jumpDino 0.5s ease-in-out;
+  -webkit-animation: cave 30s linear;
+          animation: cave 30s linear;
 }
 
 #road,
@@ -587,7 +611,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +626,7 @@ body {
 }
 
 .road__details {
-  width: 5px;
+  width: 6px;
   height: 2px;
   background: #0008;
   border-radius: 50%;
@@ -679,6 +703,60 @@ body {
   color: #3f3b3b;
 }
 
+.modal-gg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+
+.modal-gg .modal-gg__text,
+.modal-gg .modal-gg__subtext {
+  font-family: fantasy;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px #66fd01;
+  color: #3f3b3b;
+  line-height: 38px;
+}
+
+.modal-gg .modal-gg__subtext {
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-wp {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: blanchedalmond;
+  border-radius: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 3.6s ease-in;
+  transition: all 3.6s ease-in;
+}
+
+.modal-wp .modal-wp__text {
+  font-family: fantasy;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #3f3b3b;
+  line-height: 38px;
+}
+
 .game__sun {
   width: 80px;
   height: 80px;
@@ -752,25 +830,25 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: cloudy 15s infinite linear;
-          animation: cloudy 15s infinite linear;
+  -webkit-animation: cloudy 16s infinite linear;
+          animation: cloudy 16s infinite linear;
 }
 
 .game__clouds-2 {
-  -webkit-animation: cloudy-2 15s infinite linear;
-          animation: cloudy-2 15s infinite linear;
+  -webkit-animation: cloudy-2 16s infinite linear;
+          animation: cloudy-2 16s infinite linear;
 }
 
 .cloud {
   width: 110px;
-  height: 55px;
+  height: 70px;
   background: url("../images/cloud.png") no-repeat;
-  background-size: 110px 55px;
+  background-size: 110px 70px;
   opacity: 0.8;
 }
 
