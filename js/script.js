@@ -74,8 +74,4 @@ let player = document.getElementById('playerName');
 if (playerName == "") {
    playerName = "man";
 };
-
 player.innerHTML = playerName;
-
-console.log(playerName);
-console.log(player);
