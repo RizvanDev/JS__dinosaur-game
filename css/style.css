@@ -1,0 +1,799 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  padding: 0;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+@-webkit-keyframes cactusAnimate1 {
+  0% {
+    left: 1950px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+@keyframes cactusAnimate1 {
+  0% {
+    left: 1950px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+@-webkit-keyframes cactusAnimate2 {
+  0% {
+    left: 875px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+@keyframes cactusAnimate2 {
+  0% {
+    left: 875px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+@-webkit-keyframes home {
+  0% {
+    left: 2950px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes home {
+  0% {
+    left: 2950px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@-webkit-keyframes home-away {
+  0% {
+    left: 4300px;
+  }
+  100% {
+    left: -25px;
+  }
+}
+
+@keyframes home-away {
+  0% {
+    left: 4300px;
+  }
+  100% {
+    left: -25px;
+  }
+}
+
+@-webkit-keyframes jumpDino {
+  0% {
+    top: 148px;
+  }
+  50% {
+    top: 85px;
+  }
+  100% {
+    top: 148px;
+  }
+}
+
+@keyframes jumpDino {
+  0% {
+    top: 148px;
+  }
+  50% {
+    top: 85px;
+  }
+  100% {
+    top: 148px;
+  }
+}
+
+@-webkit-keyframes cave {
+  0% {
+    left: 6000px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes cave {
+  0% {
+    left: 6000px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@-webkit-keyframes suny-1 {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  100% {
+    left: -25px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes suny-1 {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  100% {
+    left: -25px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes suny-2 {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  100% {
+    left: -25px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes suny-2 {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  100% {
+    left: -25px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes suny-3 {
+  0% {
+    bottom: -3px;
+    left: -5px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -5px;
+    left: -11px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes suny-3 {
+  0% {
+    bottom: -3px;
+    left: -5px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -5px;
+    left: -11px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes suny-4 {
+  0% {
+    bottom: -13px;
+    left: 14px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -18px;
+    left: 14px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes suny-4 {
+  0% {
+    bottom: -13px;
+    left: 14px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -18px;
+    left: 14px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes suny-5 {
+  0% {
+    bottom: -14px;
+    left: 40px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -19px;
+    left: 42px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes suny-5 {
+  0% {
+    bottom: -14px;
+    left: 40px;
+    opacity: 0;
+  }
+  100% {
+    bottom: -19px;
+    left: 42px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes cloudy {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes cloudy {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes cloudy-2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes cloudy-2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes traffic {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -0px;
+  }
+}
+
+@keyframes traffic {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -0px;
+  }
+}
+
+@-webkit-keyframes traffic-2 {
+  0% {
+    left: -0px;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes traffic-2 {
+  0% {
+    left: -0px;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+body {
+  background: #2b2525;
+}
+
+.game {
+  position: relative;
+  width: 900px;
+  height: 200px;
+  margin: 80px auto;
+  background: #c6dfe8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background: url("../images/dinosaur.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 148px;
+  left: 20px;
+  z-index: 5;
+}
+
+#cactus-1 {
+  width: 20px;
+  height: 35px;
+  background: url("../images/cactus-1.png") no-repeat;
+  background-size: 20px 30px;
+  position: absolute;
+  left: 1950px;
+  top: 140px;
+  z-index: 3;
+  -webkit-animation: cactusAnimate1 11s infinite linear;
+          animation: cactusAnimate1 11s infinite linear;
+}
+
+#cactus-2 {
+  width: 35px;
+  height: 45px;
+  background: url("../images/cactus-2.png") no-repeat;
+  background-size: 35px 45px;
+  position: absolute;
+  left: 875px;
+  top: 155px;
+  z-index: 4;
+  -webkit-animation: cactusAnimate2 2.3s infinite linear;
+          animation: cactusAnimate2 2.3s infinite linear;
+}
+
+#home {
+  z-index: 3;
+  position: absolute;
+  top: 110px;
+  left: 3000px;
+  width: 100px;
+  height: 80px;
+  background: url("../images/home.png") no-repeat;
+  background-size: 100px 80px;
+  background-position: center;
+  -webkit-animation: home 16s linear;
+          animation: home 16s linear;
+}
+
+#home-away {
+  position: absolute;
+  top: 150px;
+  left: 4300px;
+  width: 35px;
+  height: 25px;
+  background: url("../images/home-away.png") no-repeat;
+  background-size: 35px 25px;
+  opacity: 0.6;
+  -webkit-animation: home-away 24s linear;
+          animation: home-away 24s linear;
+}
+
+#cave {
+  z-index: 4;
+  position: absolute;
+  left: 6000px;
+  bottom: -6px;
+  width: 150px;
+  height: 100px;
+  background: url("../images/cave.png") no-repeat;
+  background-size: 150px 100px;
+  -webkit-animation: cave 3s linear;
+          animation: cave 3s linear;
+}
+
+.jump {
+  -webkit-animation: jumpDino 0.5s ease-in-out;
+          animation: jumpDino 0.5s ease-in-out;
+}
+
+#road,
+#road-2 {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(114, 36, 36, 0.556);
+  -webkit-animation: traffic 2.3s infinite linear;
+          animation: traffic 2.3s infinite linear;
+}
+
+#road-2 {
+  -webkit-animation: traffic-2 2.3s infinite linear;
+          animation: traffic-2 2.3s infinite linear;
+}
+
+.road__details {
+  width: 5px;
+  height: 2px;
+  background: #0008;
+  border-radius: 50%;
+}
+
+.detail-8 {
+  position: absolute;
+  top: 7px;
+  right: 30px;
+}
+
+.detail-7 {
+  position: absolute;
+  top: 17px;
+  right: 130px;
+}
+
+.detail-6 {
+  position: absolute;
+  top: 10px;
+  right: 230px;
+}
+
+.detail-5 {
+  position: absolute;
+  top: 20px;
+  right: 330px;
+}
+
+.detail-4 {
+  position: absolute;
+  top: 15px;
+  right: 430px;
+}
+
+.detail-3 {
+  position: absolute;
+  top: 5px;
+  right: 530px;
+}
+
+.detail-2 {
+  position: absolute;
+  top: 25px;
+  right: 630px;
+}
+
+.detail-1 {
+  position: absolute;
+  top: 12px;
+  right: 730px;
+}
+
+.detail-0 {
+  position: absolute;
+  top: 9px;
+  right: 830px;
+}
+
+.modal {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+
+.modal .modal__text {
+  font-family: fantasy;
+  font-size: 45px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px red;
+  color: #3f3b3b;
+}
+
+.game__sun {
+  width: 80px;
+  height: 80px;
+  background: #fdff79;
+  position: relative;
+  left: 830px;
+  top: -15px;
+  border-radius: 50%;
+}
+
+.game__sun .sun__light-1,
+.game__sun .sun__light-2,
+.game__sun .sun__light-3,
+.game__sun .sun__light-4,
+.game__sun .sun__light-5 {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fcfcc4;
+}
+
+.game__sun .sun__light-1 {
+  left: -25px;
+  bottom: 50px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-animation: suny-1 1.2s infinite linear;
+          animation: suny-1 1.2s infinite linear;
+}
+
+.game__sun .sun__light-2 {
+  left: -26px;
+  bottom: 20px;
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  -webkit-animation: suny-2 1.2s infinite linear;
+          animation: suny-2 1.2s infinite linear;
+}
+
+.game__sun .sun__light-3 {
+  left: -11px;
+  bottom: -5px;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  -webkit-animation: suny-3 1.2s infinite linear;
+          animation: suny-3 1.2s infinite linear;
+}
+
+.game__sun .sun__light-4 {
+  left: 14px;
+  bottom: -18px;
+  -webkit-transform: rotate(-73deg);
+          transform: rotate(-73deg);
+  -webkit-animation: suny-4 1.2s infinite linear;
+          animation: suny-4 1.2s infinite linear;
+}
+
+.game__sun .sun__light-5 {
+  left: 42px;
+  bottom: -19px;
+  -webkit-transform: rotate(-106deg);
+          transform: rotate(-106deg);
+  -webkit-animation: suny-5 1.2s infinite linear;
+          animation: suny-5 1.2s infinite linear;
+}
+
+.game__clouds,
+.game__clouds-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: cloudy 15s infinite linear;
+          animation: cloudy 15s infinite linear;
+}
+
+.game__clouds-2 {
+  -webkit-animation: cloudy-2 15s infinite linear;
+          animation: cloudy-2 15s infinite linear;
+}
+
+.cloud {
+  width: 110px;
+  height: 55px;
+  background: url("../images/cloud.png") no-repeat;
+  background-size: 110px 55px;
+  opacity: 0.8;
+}
+
+.cloud-1 {
+  position: absolute;
+  top: 17px;
+  right: 5px;
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 37px;
+  right: 225px;
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 62px;
+  left: 300px;
+}
+
+.cloud-4 {
+  position: absolute;
+  top: 22px;
+  left: 120px;
+}

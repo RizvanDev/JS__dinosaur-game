@@ -1,0 +1,260 @@
+@import "my-normalize";
+@import "animate";
+
+body {
+   background: rgb(43, 37, 37);
+}
+
+.game {
+   position: relative;
+   width: 900px;
+   height: 200px;
+   margin: 80px auto;
+   background: rgb(198, 223, 232);
+   border-radius: 6px;
+   overflow: hidden;
+}
+#dino {
+   width: 50px;
+   height: 50px;
+   background: url("../images/dinosaur.png") no-repeat;
+   background-size: contain;
+   background-position: center;
+   position: absolute;
+   top: 148px;
+   left: 20px;
+   z-index: 5;
+}
+#cactus-1 {
+   width: 20px;
+   height: 35px;
+   background: url("../images/cactus-1.png") no-repeat;
+   background-size: 20px 30px;
+   position: absolute;
+   left: 1950px;
+   top: 140px;
+   z-index: 3;
+   animation: cactusAnimate1 11s infinite linear;
+}
+#cactus-2 {
+   width: 35px;
+   height: 45px;
+   background: url("../images/cactus-2.png") no-repeat;
+   background-size: 35px 45px;
+   position: absolute;
+   left: 875px;
+   top: 155px;
+   z-index: 4;
+   animation: cactusAnimate2 2.3s infinite linear;
+}
+#home {
+   z-index: 3;
+   position: absolute;
+   top: 110px;
+   left: 3000px;
+   width: 100px;
+   height: 80px;
+   background: url("../images/home.png") no-repeat;
+   background-size: 100px 80px;
+   background-position: center;
+   animation: home 16s linear;
+}
+#home-away {
+   position: absolute;
+   top: 150px;
+   left: 4300px;
+   width: 35px;
+   height: 25px;
+   background: url("../images/home-away.png") no-repeat;
+   background-size: 35px 25px;
+   opacity: 0.6;
+   animation: home-away 24s linear;
+}
+#cave {
+   z-index: 4;
+   position: absolute;
+   left: 6000px;
+   bottom: -6px;
+   width: 150px;
+   height: 100px;
+   background: url("../images/cave.png") no-repeat;
+   background-size: 150px 100px;
+   animation: cave 3s linear;
+}
+.jump {
+   animation: jumpDino 0.5s ease-in-out;
+}
+
+#road,
+#road-2 {
+   z-index: 0;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 30px;
+   display: flex;
+   background: rgba(114, 36, 36, 0.556);
+   animation: traffic 2.3s infinite linear;
+}
+#road-2 {
+   animation: traffic-2 2.3s infinite linear;
+}
+.road__details {
+   width: 5px;
+   height: 2px;
+   background: #0008;
+   border-radius: 50%;
+}
+.detail-8 {
+   position: absolute;
+   top: 7px;
+   right: 30px;
+}
+.detail-7 {
+   position: absolute;
+   top: 17px;
+   right: 130px;
+}
+.detail-6 {
+   position: absolute;
+   top: 10px;
+   right: 230px;
+}
+.detail-5 {
+   position: absolute;
+   top: 20px;
+   right: 330px;
+}
+.detail-4 {
+   position: absolute;
+   top: 15px;
+   right: 430px;
+}
+.detail-3 {
+   position: absolute;
+   top: 5px;
+   right: 530px;
+}
+.detail-2 {
+   position: absolute;
+   top: 25px;
+   right: 630px;
+}
+.detail-1 {
+   position: absolute;
+   top: 12px;
+   right: 730px;
+}
+.detail-0 {
+   position: absolute;
+   top: 9px;
+   right: 830px;
+}
+
+.modal {
+   position: absolute;
+   top: 38%;
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 0;
+   .modal__text {
+      font-family: fantasy;
+      font-size: 45px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 3px red;
+      color: rgb(63, 59, 59);
+   }
+}
+
+.game__sun {
+   width: 80px;
+   height: 80px;
+   background: rgb(253, 255, 121);
+   position: relative;
+   left: 830px;
+   top: -15px;
+   border-radius: 50%;
+   .sun__light-1,
+   .sun__light-2,
+   .sun__light-3,
+   .sun__light-4,
+   .sun__light-5 {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgb(252, 252, 196);
+   }
+   .sun__light-1 {
+      left: -25px;
+      bottom: 50px;
+      transform: rotate(10deg);
+      animation: suny-1 1.2s infinite linear;
+   }
+   .sun__light-2 {
+      left: -26px;
+      bottom: 20px;
+      transform: rotate(-13deg);
+      animation: suny-2 1.2s infinite linear;
+   }
+   .sun__light-3 {
+      left: -11px;
+      bottom: -5px;
+      transform: rotate(-50deg);
+      animation: suny-3 1.2s infinite linear;
+   }
+   .sun__light-4 {
+      left: 14px;
+      bottom: -18px;
+      transform: rotate(-73deg);
+      animation: suny-4 1.2s infinite linear;
+   }
+   .sun__light-5 {
+      left: 42px;
+      bottom: -19px;
+      transform: rotate(-106deg);
+      animation: suny-5 1.2s infinite linear;
+   }
+}
+
+.game__clouds,
+.game__clouds-2 {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   animation: cloudy 15s infinite linear;
+}
+.game__clouds-2 {
+   animation: cloudy-2 15s infinite linear;
+}
+.cloud {
+   width: 110px;
+   height: 55px;
+   background: url("../images/cloud.png") no-repeat;
+   background-size: 110px 55px;
+   opacity: 0.8;
+}
+.cloud-1 {
+   position: absolute;
+   top: 17px;
+   right: 5px;
+}
+.cloud-2 {
+   position: absolute;
+   top: 37px;
+   right: 225px;
+}
+.cloud-3 {
+   position: absolute;
+   top: 62px;
+   left: 300px;
+}
+.cloud-4 {
+   position: absolute;
+   top: 22px;
+   left: 120px;
+}
