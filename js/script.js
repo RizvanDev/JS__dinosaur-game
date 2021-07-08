@@ -1,4 +1,5 @@
 
+let playerName = prompt(`YOUR NAME`);
 const dino = document.getElementById('dino');
 const cactus1 = document.getElementById('cactus-1');
 const cactus2 = document.getElementById('cactus-2');
@@ -12,7 +13,6 @@ const modalgg = document.querySelector('.modal-gg');
 const modalwp = document.querySelector('.modal-wp');
 
 const btn = document.querySelector('.jump-btn');
-
 
 function jump() {
    if (dino.classList != 'jump') {
@@ -68,3 +68,14 @@ let isAlife = setInterval(function () {
    };
 
 }, 10);
+
+let player = document.getElementById('playerName');
+
+if (playerName == "") {
+   playerName = "man";
+};
+
+player.innerHTML = playerName;
+
+console.log(playerName);
+console.log(player);

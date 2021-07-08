@@ -15,7 +15,7 @@ body {
    border-radius: 6px;
    overflow: hidden;
    &:hover {
-      cursor: pointer;
+      cursor: none;
    }
 }
 #dino {
@@ -33,7 +33,7 @@ body {
    animation: dino-go-home 3.5s linear;
 }
 .jump {
-   animation: jumpDino 0.3s ease-out 0s;
+   animation: jumpDino 0.4s ease-out 0s;
 }
 #cactus-1 {
    width: 20px;
@@ -210,6 +210,10 @@ body {
       letter-spacing: 1px;
       color: rgb(63, 59, 59);
       line-height: 38px;
+      #playerName {
+         font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+         font-weight: 800;
+      }
    }
 }
 
@@ -308,20 +312,21 @@ body {
 
 .jump-btn {
    z-index: 10;
-   padding: 10px;
-   max-width: 60px;
+   padding: 30px;
+   max-width: 240px;
    margin: -50px auto 0 auto;
    display: block;
    text-align: center;
    background: bisque;
    color: brown;
+   font-size: 26px;
    font-weight: 800;
    cursor: pointer;
    border-radius: 7px;
    font-family: fantasy;
    letter-spacing: 1px;
    &:active {
-      transform: scale(0.95);
-      transition: 0.1s;
+      transform: scale(0.9);
+      transition: 0.2s;
    }
 }

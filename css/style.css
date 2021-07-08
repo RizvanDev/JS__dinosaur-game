@@ -518,7 +518,7 @@ body {
 }
 
 .game:hover {
-  cursor: pointer;
+  cursor: none;
 }
 
 #dino {
@@ -539,8 +539,8 @@ body {
 }
 
 .jump {
-  -webkit-animation: jumpDino 0.3s ease-out 0s;
-          animation: jumpDino 0.3s ease-out 0s;
+  -webkit-animation: jumpDino 0.4s ease-out 0s;
+          animation: jumpDino 0.4s ease-out 0s;
 }
 
 #cactus-1 {
@@ -761,6 +761,11 @@ body {
   line-height: 38px;
 }
 
+.modal-wp .modal-wp__text #playerName {
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-weight: 800;
+}
+
 .game__sun {
   width: 80px;
   height: 80px;
@@ -882,13 +887,14 @@ body {
 
 .jump-btn {
   z-index: 10;
-  padding: 10px;
-  max-width: 60px;
+  padding: 30px;
+  max-width: 240px;
   margin: -50px auto 0 auto;
   display: block;
   text-align: center;
   background: bisque;
   color: brown;
+  font-size: 26px;
   font-weight: 800;
   cursor: pointer;
   border-radius: 7px;
@@ -897,8 +903,8 @@ body {
 }
 
 .jump-btn:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
