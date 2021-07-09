@@ -1,5 +1,3 @@
-
-let playerName = prompt(`YOUR NAME`);
 const dino = document.getElementById('dino');
 const cactus1 = document.getElementById('cactus-1');
 const cactus2 = document.getElementById('cactus-2');
@@ -31,7 +29,7 @@ let isAlife = setInterval(function () {
    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
    let cactus2Left = parseInt(window.getComputedStyle(cactus2).getPropertyValue('left'));
 
-   if (cactus2Left < 58 && cactus2Left > 0 && dinoTop >= 238) {
+   if (cactus2Left < 95 && cactus2Left > 0 && dinoTop >= 215) {
       cactus2.style.animationPlayState = "paused";
       cactus1.style.animationPlayState = "paused";
       home.style.animationPlayState = "paused";
@@ -69,9 +67,18 @@ let isAlife = setInterval(function () {
 
 }, 10);
 
-let player = document.getElementById('playerName');
 
-if (playerName == "") {
-   playerName = "man";
-};
-player.innerHTML = playerName;
+
+
+let gameForm = document.querySelector('.gameForm');
+let main = document.querySelector('.main');
+
+document.querySelector('.gameForm__btn').onclick = play;
+
+function play() {
+   let input = document.querySelector('.gameForm__name').value;
+   document.getElementById('playerName').innerHTML = input;
+   gameForm.style.visibility = "hidden", gameForm.style.opacity = "0", gameForm.style.transition = "all 0.2s";
+   main.style.display = "block";
+}
+

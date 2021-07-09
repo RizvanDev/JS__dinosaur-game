@@ -9,68 +9,77 @@
 </head>
 
 <body>
-   <main class="game">
-      <div id="dino"></div>
-      <div id="cactus-1"></div>
-      <div id="cactus-2"></div>
-      <div id="home"></div>
-      <div id="home-away"></div>
-      <div id="cave"></div>
-      <div class="game__sun">
-         <div class="sun__light-1"></div>
-         <div class="sun__light-2"></div>
-         <div class="sun__light-3"></div>
-         <div class="sun__light-4"></div>
-         <div class="sun__light-5"></div>
+   <h1 class="game__title">Welcome to the game <br />- Dino comes home -</h1>
+   <main class="main">
+      <div class="game">
+         <div id="dino"></div>
+         <div id="cactus-1"></div>
+         <div id="cactus-2"></div>
+         <div id="home"></div>
+         <div id="home-away"></div>
+         <div id="cave"></div>
+         <div class="game__sun">
+            <div class="sun__light-1"></div>
+            <div class="sun__light-2"></div>
+            <div class="sun__light-3"></div>
+            <div class="sun__light-4"></div>
+            <div class="sun__light-5"></div>
+         </div>
+         <div class="game__clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+         </div>
+         <div class="game__clouds-2">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+         </div>
+         <div id="road">
+            <div class="road__details detail-0"></div>
+            <div class="road__details detail-1"></div>
+            <div class="road__details detail-2"></div>
+            <div class="road__details detail-3"></div>
+            <div class="road__details detail-4"></div>
+            <div class="road__details detail-5"></div>
+            <div class="road__details detail-6"></div>
+            <div class="road__details detail-7"></div>
+            <div class="road__details detail-8"></div>
+         </div>
+         <div id="road-2">
+            <div class="road__details detail-0"></div>
+            <div class="road__details detail-1"></div>
+            <div class="road__details detail-2"></div>
+            <div class="road__details detail-3"></div>
+            <div class="road__details detail-4"></div>
+            <div class="road__details detail-5"></div>
+            <div class="road__details detail-6"></div>
+            <div class="road__details detail-7"></div>
+            <div class="road__details detail-8"></div>
+         </div>
+         <div class="modal">
+            <div class="modal__text">YOU LOSE !!!</div>
+         </div>
+         <div class="modal-gg">
+            <div class="modal-gg__text">CONGRATULATION !!!</div>
+            <div class="modal-gg__subtext">YOU CAME BACK HOME...</div>
+         </div>
+         <div class="modal-wp">
+            <div class="modal-wp__text">Good Job <span id="playerName"></span> !</div>
+         </div>
       </div>
-      <div class="game__clouds">
-         <div class="cloud cloud-1"></div>
-         <div class="cloud cloud-2"></div>
-         <div class="cloud cloud-3"></div>
-         <div class="cloud cloud-4"></div>
-      </div>
-      <div class="game__clouds-2">
-         <div class="cloud cloud-1"></div>
-         <div class="cloud cloud-2"></div>
-         <div class="cloud cloud-3"></div>
-         <div class="cloud cloud-4"></div>
-      </div>
-      <div id="road">
-         <div class="road__details detail-0"></div>
-         <div class="road__details detail-1"></div>
-         <div class="road__details detail-2"></div>
-         <div class="road__details detail-3"></div>
-         <div class="road__details detail-4"></div>
-         <div class="road__details detail-5"></div>
-         <div class="road__details detail-6"></div>
-         <div class="road__details detail-7"></div>
-         <div class="road__details detail-8"></div>
-      </div>
-      <div id="road-2">
-         <div class="road__details detail-0"></div>
-         <div class="road__details detail-1"></div>
-         <div class="road__details detail-2"></div>
-         <div class="road__details detail-3"></div>
-         <div class="road__details detail-4"></div>
-         <div class="road__details detail-5"></div>
-         <div class="road__details detail-6"></div>
-         <div class="road__details detail-7"></div>
-         <div class="road__details detail-8"></div>
-      </div>
-      <div class="modal">
-         <div class="modal__text">YOU LOSE !!!</div>
-      </div>
-      <div class="modal-gg">
-         <div class="modal-gg__text">CONGRATULATION !!!</div>
-         <div class="modal-gg__subtext">YOU CAME BACK HOME...</div>
-      </div>
-      <div class="modal-wp">
-         <div class="modal-wp__text">Good Job <span id="playerName"></span> !</div>
-      </div>
+      <buttton type="submit" class="jump-btn">JUMP</buttton>
+      <button type="submit" class="reload" value="Refresh Page" onClick="window.location.reload();">
+         <img src="./images/reload-page.png" alt="">
+      </button>
    </main>
-   <buttton type="submit" class="jump-btn">JUMP</buttton>
-   <button type="submit" class="reload" value="Refresh Page" onClick="window.location.reload();"><img
-         src="./images/reload-page.png" alt=""></button>
+   <div class="gameForm">
+      <div class="gameForm__text">What is your name?</div>
+      <input type="text" class="gameForm__name" placeholder="YOUR NAME">
+      <button type="button" class="gameForm__btn">PLAY</button>
+   </div>
    <script src="./js/script.js"></script>
 </body>
 

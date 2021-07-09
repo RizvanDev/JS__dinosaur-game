@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -250,25 +251,25 @@ template {
 
 @-webkit-keyframes jumpDino {
   0% {
-    top: 238px;
+    top: 215px;
   }
   50% {
-    top: 125px;
+    top: 105px;
   }
   100% {
-    top: 238px;
+    top: 215px;
   }
 }
 
 @keyframes jumpDino {
   0% {
-    top: 238px;
+    top: 215px;
   }
   50% {
-    top: 125px;
+    top: 105px;
   }
   100% {
-    top: 238px;
+    top: 215px;
   }
 }
 
@@ -508,6 +509,10 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  display: none;
+}
+
 .game {
   position: relative;
   width: 900px;
@@ -523,13 +528,13 @@ body {
 }
 
 #dino {
-  width: 50px;
-  height: 50px;
-  background: url("../images/dinosaur.png") no-repeat;
-  background-size: contain;
+  width: 100px;
+  height: 70px;
+  background: url("../images/dinos.png") no-repeat;
+  background-size: 100px 70px;
   background-position: center;
   position: absolute;
-  top: 238px;
+  top: 215px;
   left: 20px;
   z-index: 5;
 }
@@ -540,8 +545,8 @@ body {
 }
 
 .jump {
-  -webkit-animation: jumpDino 0.4s ease-out 0s;
-          animation: jumpDino 0.4s ease-out 0s;
+  -webkit-animation: jumpDino 0.4s ease-in-out 0s;
+          animation: jumpDino 0.4s ease-in-out 0s;
 }
 
 #cactus-1 {
@@ -911,12 +916,12 @@ body {
 .reload {
   display: block;
   position: relative;
-  left: 800px;
-  top: -100px;
+  left: 730px;
+  top: -120px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border-color: transparent;
   background: none;
@@ -931,4 +936,94 @@ body {
 .reload:active {
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
+}
+
+.gameForm {
+  z-index: 20;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 500px;
+  min-height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #000;
+}
+
+.gameForm .gameForm__text {
+  text-align: center;
+  color: #fff9;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 25px;
+}
+
+.gameForm .gameForm__name,
+.gameForm .gameForm__btn {
+  display: block;
+  margin: 30px auto;
+}
+
+.gameForm .gameForm__name {
+  margin-top: 40px;
+  max-width: 300px;
+  padding: 10px;
+  color: #4e4c4c;
+  background: #f2f5f5;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.gameForm .gameForm__name::-webkit-input-placeholder {
+  text-align: center;
+  color: #6663;
+}
+
+.gameForm .gameForm__name::-moz-placeholder {
+  text-align: center;
+  color: #6663;
+}
+
+.gameForm .gameForm__btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 4px 1px 1px #666363;
+          box-shadow: 0px 4px 1px 1px #666363;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.gameForm .gameForm__btn:hover {
+  background: brown;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 1px 1px #a8a6a6;
+          box-shadow: 0px 4px 1px 1px #a8a6a6;
+}
+
+.gameForm .gameForm__btn:active {
+  margin-top: 34px;
+  -webkit-box-shadow: 0px 0px 1px 1px #666363;
+          box-shadow: 0px 0px 1px 1px #666363;
+}
+
+.game__title {
+  margin-top: 40px;
+  text-align: center;
+  color: goldenrod;
+  font-family: "Zen Tokyo Zoo", cursive;
+  letter-spacing: 3.5px;
+  font-size: 45px;
 }
