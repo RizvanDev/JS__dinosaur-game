@@ -18,7 +18,7 @@ function jump() {
    }
    setTimeout(function () {
       dino.classList.remove('jump');
-   }, 400)
+   }, 420)
 };
 
 btn.addEventListener('click', function (event) {

@@ -545,8 +545,8 @@ body {
 }
 
 .jump {
-  -webkit-animation: jumpDino 0.4s ease-in-out 0s;
-          animation: jumpDino 0.4s ease-in-out 0s;
+  -webkit-animation: jumpDino 0.4s ease-out 0s;
+          animation: jumpDino 0.4s ease-out 0s;
 }
 
 #cactus-1 {
