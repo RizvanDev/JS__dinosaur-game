@@ -1,11 +1,13 @@
 @import "my-normalize";
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "animate";
 
 body {
    background: rgb(43, 37, 37);
    width: 920px;
    margin: 0 auto;
+   font-family: "Bebas Neue", cursive;
 }
 .main {
    display: none;
@@ -38,7 +40,7 @@ body {
    animation: dino-go-home 3.5s linear;
 }
 .jump {
-   animation: jumpDino 0.4s ease-out 0s;
+   animation: jumpDino 0.5s ease-out 0s;
 }
 #cactus-1 {
    width: 20px;
@@ -170,7 +172,6 @@ body {
    transform: translateX(-50%);
    opacity: 0;
    .modal__text {
-      font-family: fantasy;
       font-size: 45px;
       letter-spacing: 1px;
       text-shadow: 0 0 3px red;
@@ -185,7 +186,6 @@ body {
    opacity: 0;
    .modal-gg__text,
    .modal-gg__subtext {
-      font-family: fantasy;
       font-size: 40px;
       letter-spacing: 1px;
       text-shadow: 0 0 3px #66fd01;
@@ -210,15 +210,10 @@ body {
    transform: translateX(-50%);
    transition: all 3.6s ease-in;
    .modal-wp__text {
-      font-family: fantasy;
       font-size: 18px;
       letter-spacing: 1px;
       color: rgb(63, 59, 59);
       line-height: 38px;
-      #playerName {
-         font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-         font-weight: 800;
-      }
    }
 }
 
@@ -358,7 +353,7 @@ body {
 .gameForm {
    z-index: 20;
    position: fixed;
-   top: 20%;
+   top: 190px;
    left: 50%;
    transform: translateX(-50%);
    width: 500px;
@@ -370,8 +365,7 @@ body {
       text-align: center;
       color: #fff9;
       font-size: 20px;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       margin-top: 25px;
    }
    .gameForm__name,
@@ -381,23 +375,26 @@ body {
    }
    .gameForm__name {
       margin-top: 40px;
-      max-width: 300px;
-      padding: 10px;
+      width: 280px;
+      padding: 10px 14px;
       color: rgb(78, 76, 76);
       background: rgb(242, 245, 245);
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 800;
-      letter-spacing: 1px;
+      letter-spacing: 5px;
       border-radius: 5px;
       border: none;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       &::-webkit-input-placeholder {
+         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
          text-align: center;
-         color: #6663;
+         -webkit-text-fill-color: transparent;
+         -webkit-text-stroke: 1px #6667;
       }
       &::-moz-placeholder {
+         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
          text-align: center;
-         color: #6663;
+         -moz-text-fill-color: transparent;
+         -moz-text-stroke: 1px #6667;
       }
    }
    .gameForm__btn {
@@ -405,8 +402,6 @@ body {
       border-radius: 10px;
       border: none;
       cursor: pointer;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      font-weight: 800;
       letter-spacing: 1.6px;
       font-size: 24px;
       box-shadow: 0px 4px 1px 1px rgb(102, 99, 99);
@@ -422,7 +417,6 @@ body {
       }
    }
 }
-
 .game__title {
    margin-top: 40px;
    text-align: center;
