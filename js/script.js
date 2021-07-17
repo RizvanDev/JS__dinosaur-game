@@ -18,7 +18,7 @@ function jump() {
    }
    setTimeout(function () {
       dino.classList.remove('jump');
-   }, 510)
+   }, 610)
 };
 
 btn.addEventListener('click', function (event) {
@@ -29,7 +29,7 @@ let isAlife = setInterval(function () {
    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
    let cactus2Left = parseInt(window.getComputedStyle(cactus2).getPropertyValue('left'));
 
-   if (cactus2Left < 95 && cactus2Left > 0 && dinoTop >= 215) {
+   if (cactus2Left < 125 && cactus2Left > 0 && dinoTop >= 362) {
       cactus2.style.animationPlayState = "paused";
       cactus1.style.animationPlayState = "paused";
       home.style.animationPlayState = "paused";
@@ -43,7 +43,7 @@ let isAlife = setInterval(function () {
 
    let caveElemenStyle = parseInt(window.getComputedStyle(cave).getPropertyValue('left'));
 
-   if (caveElemenStyle == 800) {
+   if (caveElemenStyle == 700) {
       cactus2.style.animationPlayState = "paused";
       cactus1.style.animationPlayState = "paused";
       home.style.animationPlayState = "paused";
@@ -55,7 +55,7 @@ let isAlife = setInterval(function () {
       modalgg.style.opacity = '1', modalgg.style.transition = '1.2s ease-in';
 
       if (modalgg.style.opacity = '1') {
-         modalwp.style.top = '7%';
+         modalwp.style.top = '17%';
       };
    };
 

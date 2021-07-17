@@ -17,8 +17,8 @@ body {
 .game {
    position: relative;
    width: 900px;
-   height: 300px;
-   margin: 80px auto 80px;
+   height: 500px;
+   margin: 20px auto 80px;
    background: rgb(198, 223, 232);
    border-radius: 6px;
    overflow: hidden;
@@ -27,76 +27,76 @@ body {
    }
 }
 #dino {
-   width: 100px;
-   height: 70px;
+   width: 150px;
+   height: 130px;
    background: url("../images/dinos.png") no-repeat;
-   background-size: 100px 70px;
+   background-size: 150px 130px;
    background-position: center;
    position: absolute;
-   top: 215px;
-   left: 20px;
+   top: 362px;
+   left: 10px;
    z-index: 5;
 }
 .dino-go-home {
    animation: dino-go-home 3.5s linear;
 }
 .jump {
-   animation: jumpDino 0.5s ease-out 0s;
+   animation: jumpDino 0.6s ease-out 0s;
 }
 #cactus-1 {
-   width: 20px;
-   height: 35px;
+   width: 34px;
+   height: 39px;
    background: url("../images/cactus-1.png") no-repeat;
-   background-size: 20px 30px;
+   background-size: 34px 39px;
    position: absolute;
    left: 1950px;
-   top: 230px;
+   top: 383px;
    z-index: 3;
    animation: cactusAnimate1 11s infinite linear;
 }
 #cactus-2 {
-   width: 35px;
-   height: 45px;
+   width: 65px;
+   height: 75px;
    background: url("../images/cactus-2.png") no-repeat;
-   background-size: 35px 45px;
+   background-size: 65px 75px;
    position: absolute;
    left: 875px;
-   top: 245px;
+   top: 420px;
    z-index: 4;
    animation: cactusAnimate2 2.3s infinite linear;
 }
 #home {
    z-index: 3;
    position: absolute;
-   top: 200px;
+   top: 315px;
    left: 3000px;
-   width: 100px;
-   height: 80px;
+   width: 180px;
+   height: 140px;
    background: url("../images/home.png") no-repeat;
-   background-size: 100px 80px;
+   background-size: 180px 140px;
    background-position: center;
    animation: home 16s linear;
 }
 #home-away {
    position: absolute;
-   top: 240px;
+   top: 388px;
    left: 4300px;
-   width: 35px;
-   height: 25px;
+   width: 55px;
+   height: 40px;
    background: url("../images/home-away.png") no-repeat;
-   background-size: 35px 25px;
+   background-size: 55px 40px;
    opacity: 0.6;
    animation: home-away 24s linear;
 }
 #cave {
    z-index: 4;
    position: absolute;
-   left: 800px;
+   left: 700px;
    bottom: -6px;
-   width: 150px;
-   height: 100px;
+   width: 260px;
+   height: 200px;
    background: url("../images/cave.png") no-repeat;
-   background-size: 150px 100px;
+   background-size: 260px 200px;
    animation: cave 30s linear;
 }
 
@@ -106,7 +106,7 @@ body {
    position: absolute;
    bottom: 0;
    width: 100%;
-   height: 40px;
+   height: 80px;
    display: flex;
    background: rgba(114, 36, 36, 0.556);
    animation: traffic 2.3s infinite linear;
@@ -115,49 +115,49 @@ body {
    animation: traffic-2 2.3s infinite linear;
 }
 .road__details {
-   width: 6px;
-   height: 2px;
+   width: 10px;
+   height: 6px;
    background: #0008;
    border-radius: 50%;
 }
 .detail-8 {
    position: absolute;
-   top: 7px;
+   top: 22px;
    right: 30px;
 }
 .detail-7 {
    position: absolute;
-   top: 17px;
+   top: 32px;
    right: 130px;
 }
 .detail-6 {
    position: absolute;
-   top: 10px;
+   top: 25px;
    right: 230px;
 }
 .detail-5 {
    position: absolute;
-   top: 20px;
+   top: 35px;
    right: 330px;
 }
 .detail-4 {
    position: absolute;
-   top: 15px;
+   top: 30px;
    right: 430px;
 }
 .detail-3 {
    position: absolute;
-   top: 5px;
+   top: 20px;
    right: 530px;
 }
 .detail-2 {
    position: absolute;
-   top: 25px;
+   top: 40px;
    right: 630px;
 }
 .detail-1 {
    position: absolute;
-   top: 12px;
+   top: 27px;
    right: 730px;
 }
 .detail-0 {
@@ -181,7 +181,7 @@ body {
 }
 .modal-gg {
    position: absolute;
-   top: 40%;
+   top: 50%;
    left: 50%;
    transform: translateX(-50%);
    opacity: 0;
@@ -211,20 +211,20 @@ body {
    transform: translateX(-50%);
    transition: all 3.6s ease-in;
    .modal-wp__text {
-      font-size: 18px;
+      font-size: 36px;
       letter-spacing: 1px;
       color: rgb(63, 59, 59);
-      line-height: 38px;
+      line-height: 72px;
    }
 }
 
 .game__sun {
-   width: 80px;
-   height: 80px;
+   width: 120px;
+   height: 120px;
    background: rgb(253, 255, 121);
    position: relative;
-   left: 830px;
-   top: -15px;
+   left: 800px;
+   top: -10px;
    border-radius: 50%;
    .sun__light-1,
    .sun__light-2,
@@ -233,26 +233,22 @@ body {
    .sun__light-5 {
       content: "";
       position: absolute;
-      width: 16px;
-      height: 5px;
+      width: 30px;
+      height: 7px;
       border-radius: 50%;
-      background: rgb(252, 252, 196);
+      background: rgba(252, 252, 196, 0.796);
    }
    .sun__light-1 {
-      left: -25px;
-      bottom: 50px;
+      bottom: 80px;
       transform: rotate(10deg);
       animation: suny-1 1.2s infinite linear;
    }
    .sun__light-2 {
-      left: -26px;
-      bottom: 20px;
+      bottom: 40px;
       transform: rotate(-13deg);
       animation: suny-2 1.2s infinite linear;
    }
    .sun__light-3 {
-      left: -11px;
-      bottom: -5px;
       transform: rotate(-50deg);
       animation: suny-3 1.2s infinite linear;
    }
@@ -275,7 +271,7 @@ body {
    width: 100%;
    height: 100%;
    position: absolute;
-   top: 20px;
+   top: 54px;
    left: 0;
    display: flex;
    animation: cloudy 16s infinite linear;
@@ -284,10 +280,10 @@ body {
    animation: cloudy-2 16s infinite linear;
 }
 .cloud {
-   width: 110px;
-   height: 70px;
+   width: 140px;
+   height: 100px;
    background: url("../images/cloud.png") no-repeat;
-   background-size: 110px 70px;
+   background-size: 140px 100px;
    opacity: 0.8;
 }
 .cloud-1 {
@@ -313,14 +309,14 @@ body {
 
 .jump-btn {
    z-index: 10;
-   padding: 60px;
-   max-width: 340px;
+   padding: 50px;
+   max-width: 300px;
    margin: -50px auto 0 auto;
    display: block;
    text-align: center;
    background: bisque;
    color: brown;
-   font-size: 38px;
+   font-size: 64px;
    font-weight: 800;
    cursor: pointer;
    border-radius: 7px;

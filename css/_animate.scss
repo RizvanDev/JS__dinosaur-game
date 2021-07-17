@@ -36,13 +36,13 @@
 // dino animation
 @keyframes jumpDino {
    0% {
-      top: 215px;
+      top: 362px;
    }
    50% {
-      top: 105px;
+      top: 195px;
    }
    100% {
-      top: 215px;
+      top: 362px;
    }
 }
 @keyframes dino-go-home {
@@ -59,63 +59,63 @@
       left: 6200px;
    }
    100% {
-      left: 800px;
+      left: 700px;
    }
 }
 // sun light animation
 @keyframes suny-1 {
    0% {
-      left: -10px;
+      left: -20px;
       opacity: 0;
    }
    100% {
-      left: -25px;
+      left: -35px;
       opacity: 0.8;
    }
 }
 @keyframes suny-2 {
    0% {
-      left: -10px;
+      left: -22px;
       opacity: 0;
    }
    100% {
-      left: -25px;
+      left: -37px;
       opacity: 0.8;
    }
 }
 @keyframes suny-3 {
    0% {
-      bottom: -3px;
-      left: -5px;
+      bottom: 4px;
+      left: -10px;
       opacity: 0;
    }
    100% {
-      bottom: -5px;
-      left: -11px;
+      bottom: 0px;
+      left: -19px;
       opacity: 0.8;
    }
 }
 @keyframes suny-4 {
    0% {
-      bottom: -13px;
+      bottom: -10px;
       left: 14px;
       opacity: 0;
    }
    100% {
-      bottom: -18px;
+      bottom: -20px;
       left: 14px;
       opacity: 0.8;
    }
 }
 @keyframes suny-5 {
    0% {
-      bottom: -14px;
-      left: 40px;
+      bottom: -18px;
+      left: 50px;
       opacity: 0;
    }
    100% {
-      bottom: -19px;
-      left: 42px;
+      bottom: -26px;
+      left: 50px;
       opacity: 0.8;
    }
 }
