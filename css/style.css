@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -508,7 +508,11 @@ body {
   background: #2b2525;
   width: 920px;
   margin: 0 auto;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Otomanopee One", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .main {
@@ -708,7 +712,7 @@ body {
 }
 
 .modal .modal__text {
-  font-size: 45px;
+  font-size: 35px;
   letter-spacing: 1px;
   text-shadow: 0 0 3px red;
   color: #3f3b3b;
@@ -725,7 +729,7 @@ body {
 
 .modal-gg .modal-gg__text,
 .modal-gg .modal-gg__subtext {
-  font-size: 40px;
+  font-size: 36px;
   letter-spacing: 1px;
   text-shadow: 0 0 3px #66fd01;
   color: #3f3b3b;
@@ -939,8 +943,8 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 500px;
-  min-height: 250px;
+  width: 800px;
+  min-height: 400px;
   margin: 0 auto;
   border-radius: 10px;
   background: #000;
@@ -949,7 +953,7 @@ body {
 .gameForm .gameForm__text {
   text-align: center;
   color: #fff9;
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 2px;
   margin-top: 25px;
 }
@@ -957,17 +961,16 @@ body {
 .gameForm .gameForm__name,
 .gameForm .gameForm__btn {
   display: block;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .gameForm .gameForm__name {
   margin-top: 40px;
-  width: 280px;
-  padding: 10px 14px;
+  width: 600px;
+  padding: 15px 18px;
   color: #4e4c4c;
   background: #f2f5f5;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 50px;
   letter-spacing: 5px;
   border-radius: 5px;
   border: none;
@@ -976,26 +979,24 @@ body {
 .gameForm .gameForm__name::-webkit-input-placeholder {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-align: center;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #6667;
+  color: #6664;
 }
 
 .gameForm .gameForm__name::-moz-placeholder {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-align: center;
-  -moz-text-fill-color: transparent;
-  -moz-text-stroke: 1px #6667;
+  color: #6664;
 }
 
 .gameForm .gameForm__btn {
-  padding: 10px 30px;
+  padding: 25px 50px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   letter-spacing: 1.6px;
-  font-size: 24px;
-  -webkit-box-shadow: 0px 4px 1px 1px #666363;
-          box-shadow: 0px 4px 1px 1px #666363;
+  font-size: 44px;
+  -webkit-box-shadow: 0px 8px 1px 1px #666363;
+          box-shadow: 0px 8px 1px 1px #666363;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -1003,12 +1004,12 @@ body {
 .gameForm .gameForm__btn:hover {
   background: brown;
   color: #fff;
-  -webkit-box-shadow: 0px 4px 1px 1px #a8a6a6;
-          box-shadow: 0px 4px 1px 1px #a8a6a6;
+  -webkit-box-shadow: 0px 8px 1px 1px #a8a6a6;
+          box-shadow: 0px 8px 1px 1px #a8a6a6;
 }
 
 .gameForm .gameForm__btn:active {
-  margin-top: 34px;
+  margin-top: 44px;
   -webkit-box-shadow: 0px 0px 1px 1px #666363;
           box-shadow: 0px 0px 1px 1px #666363;
 }
@@ -1019,5 +1020,5 @@ body {
   color: goldenrod;
   font-family: "Zen Tokyo Zoo", cursive;
   letter-spacing: 3.5px;
-  font-size: 45px;
+  font-size: 50px;
 }

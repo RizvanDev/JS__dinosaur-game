@@ -1,13 +1,14 @@
 @import "my-normalize";
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 @import "animate";
 
 body {
    background: rgb(43, 37, 37);
    width: 920px;
    margin: 0 auto;
-   font-family: "Bebas Neue", cursive;
+   font-family: "Otomanopee One", sans-serif;
+   user-select: none;
 }
 .main {
    display: none;
@@ -172,7 +173,7 @@ body {
    transform: translateX(-50%);
    opacity: 0;
    .modal__text {
-      font-size: 45px;
+      font-size: 35px;
       letter-spacing: 1px;
       text-shadow: 0 0 3px red;
       color: rgb(63, 59, 59);
@@ -186,7 +187,7 @@ body {
    opacity: 0;
    .modal-gg__text,
    .modal-gg__subtext {
-      font-size: 40px;
+      font-size: 36px;
       letter-spacing: 1px;
       text-shadow: 0 0 3px #66fd01;
       color: rgb(63, 59, 59);
@@ -356,63 +357,60 @@ body {
    top: 190px;
    left: 50%;
    transform: translateX(-50%);
-   width: 500px;
-   min-height: 250px;
+   width: 800px;
+   min-height: 400px;
    margin: 0 auto;
    border-radius: 10px;
    background: #000;
    .gameForm__text {
       text-align: center;
       color: #fff9;
-      font-size: 20px;
+      font-size: 40px;
       letter-spacing: 2px;
       margin-top: 25px;
    }
    .gameForm__name,
    .gameForm__btn {
       display: block;
-      margin: 30px auto;
+      margin: 40px auto;
    }
    .gameForm__name {
       margin-top: 40px;
-      width: 280px;
-      padding: 10px 14px;
+      width: 600px;
+      padding: 15px 18px;
       color: rgb(78, 76, 76);
       background: rgb(242, 245, 245);
-      font-size: 28px;
-      font-weight: 800;
+      font-size: 50px;
       letter-spacing: 5px;
       border-radius: 5px;
       border: none;
       &::-webkit-input-placeholder {
          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
          text-align: center;
-         -webkit-text-fill-color: transparent;
-         -webkit-text-stroke: 1px #6667;
+         color: #6664;
       }
       &::-moz-placeholder {
          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
          text-align: center;
-         -moz-text-fill-color: transparent;
-         -moz-text-stroke: 1px #6667;
+         color: #6664;
       }
    }
    .gameForm__btn {
-      padding: 10px 30px;
+      padding: 25px 50px;
       border-radius: 10px;
       border: none;
       cursor: pointer;
       letter-spacing: 1.6px;
-      font-size: 24px;
-      box-shadow: 0px 4px 1px 1px rgb(102, 99, 99);
+      font-size: 44px;
+      box-shadow: 0px 8px 1px 1px rgb(102, 99, 99);
       transition: 0.1s;
       &:hover {
          background: brown;
          color: #fff;
-         box-shadow: 0px 4px 1px 1px rgb(168, 166, 166);
+         box-shadow: 0px 8px 1px 1px rgb(168, 166, 166);
       }
       &:active {
-         margin-top: 34px;
+         margin-top: 44px;
          box-shadow: 0px 0px 1px 1px rgb(102, 99, 99);
       }
    }
@@ -423,5 +421,5 @@ body {
    color: goldenrod;
    font-family: "Zen Tokyo Zoo", cursive;
    letter-spacing: 3.5px;
-   font-size: 45px;
+   font-size: 50px;
 }
