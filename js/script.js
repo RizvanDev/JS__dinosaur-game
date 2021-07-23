@@ -64,11 +64,11 @@ let isAlife = setInterval(function () {
    if (dinoElementStyle == 660) {
       dino.style.display = "none";
    };
-
 }, 10);
 
-
-
+document.getElementById('restart').onclick = function () {
+   cactus2.style.animationPlayState = "running";
+};
 
 let gameForm = document.querySelector('.gameForm');
 let main = document.querySelector('.main');
