@@ -1,3 +1,5 @@
+"use strict"
+
 const dino = document.getElementById('dino');
 const cactus1 = document.getElementById('cactus-1');
 const cactus2 = document.getElementById('cactus-2');
@@ -9,6 +11,7 @@ const cave = document.getElementById('cave');
 const modal = document.querySelector('.modal');
 const modalgg = document.querySelector('.modal-gg');
 const modalwp = document.querySelector('.modal-wp');
+const dinoStart = document.querySelector('.dinoStart');
 
 const btn = document.querySelector('.jump-btn');
 
@@ -82,3 +85,39 @@ function play() {
    main.style.display = "block";
 }
 
+
+function doNumbers(number) {
+
+   let startModal = document.querySelector('.start__modal');
+   let startNumbers = document.querySelector('.start__numbers');
+   let gameTitle = document.querySelector('.game__title');
+   let gameForm = document.querySelector('.gameForm');
+
+   startNumbers.innerHTML = number;
+
+   if (number == 3) {
+      startNumbers.style.color = 'skyblue';
+   } else if (number == 2) {
+      startNumbers.style.color = 'lightgreen';
+   } else if (number == 1) {
+      startNumbers.style.color = 'red';
+   } else if (number == 0) {
+      startNumbers.style.color = 'sienna';
+      startNumbers.innerHTML = `Let's Go !`;
+      startNumbers.style.fontSize = '90px';
+      startModal.style.animationPlayState = 'paused';
+   } else if (number == -1) {
+      startModal.style.top = '48%';
+      startModal.style.height = '0';
+      startNumbers.style.display = 'none';
+      gameForm.style.top = '300px';
+      gameTitle.style.marginTop = '100px';
+      dinoStart.style.left = '0';
+      return false;
+   };
+
+   setTimeout(doNumbers, 1100, --number);
+
+};
+
+setTimeout(doNumbers, 390, 3);

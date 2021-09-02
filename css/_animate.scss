@@ -153,3 +153,12 @@
       left: -100%;
    }
 }
+// start number animation
+@keyframes doNumbers {
+   0% {
+      background-color: rgb(194, 191, 191);
+   }
+   100% {
+      background-color: snow;
+   }
+}
